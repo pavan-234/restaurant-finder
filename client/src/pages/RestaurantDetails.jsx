@@ -10,7 +10,7 @@ function RestaurantDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/restaurants/${id}`)
+      .get(`https://restaurant-finder-87y8.onrender.com/api/restaurants/${id}`)
       .then((res) => {
         console.log("✅ Restaurant Data:", res.data); // Debugging
         setRestaurant(res.data.data);

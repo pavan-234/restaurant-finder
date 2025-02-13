@@ -30,7 +30,7 @@ function ImageSearch() {
     formData.append("image", image);
 
     try {
-      const response = await axios.post("http://localhost:5000/image-search", formData, {
+      const response = await axios.post("https://restaurant-finder-87y8.onrender.com/image-search", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

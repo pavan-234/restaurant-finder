@@ -17,7 +17,7 @@ function HomePage() {
     setError(null);
 
     axios
-      .get(`http://localhost:5000/api/restaurants?page=${page}&limit=${limit}`)
+      .get(`https://restaurant-finder-87y8.onrender.com/api/restaurants?page=${page}&limit=${limit}`)
       .then((res) => {
         console.log("✅ API Response:", res.data);
 

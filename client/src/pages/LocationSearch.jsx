@@ -50,7 +50,7 @@ function LocationSearch() {
   
     try {
       const response = await axios.get(
-        `http://localhost:5000/location?lat=${lat}&lng=${lng}&radius=${rad}`
+        `https://restaurant-finder-87y8.onrender.com/location?lat=${lat}&lng=${lng}&radius=${rad}`
       );
   
       console.log("API Response:", response.data); // 🟢 Debug API response
